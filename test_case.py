@@ -28,4 +28,4 @@ def test_get_user():
 }"""
     correct_response = json.loads(correct_response)
     response = requests.get('https://jsonplaceholder.typicode.com/users/2').json()
-    assert correct_response == response 
+    assert correct_response == response, "Incorrect response"
